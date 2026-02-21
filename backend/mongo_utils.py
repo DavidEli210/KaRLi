@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from Enums import rl_variables
 
 MONGO_URI = os.getenv("MONGO_URI",
-                      "mongodb+srv://adm:Aa123456@karli.mongocluster.cosmos.azure.com/?tls=true&authMechanism=SCRAM-SHA-256&retrywrites=false&maxIdleTimeMS=120000")
+                      "")
 client = MongoClient(MONGO_URI)
 db = client["KaRLi"]
 users_collection = db["users"]
